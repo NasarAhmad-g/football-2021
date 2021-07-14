@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.non-optimized-device {
+  display: none;
+}
+
+header.header-area {
+  background-color: #2d25a0;
+  color: #fff;
+}
+.hero-section {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+a.btn {
+  text-decoration: none;
+  color: #fff;
+  background: #15aabf;
+  padding: 10px 20px;
+  margin: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.wrap-title {
+  width: 50%;
+}
+
+.wrap-title > h1 {
+  font-size: 48px;
+}
+
+.wrap-img {
+  width: 100%;
+}
+
+.wrap-img > img {
+  width: 100%;
+}
+
+.player-cards-area {
+  width: 90%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px 30px;
+  justify-items: center;
+}
+
+.player-dtls {
+  max-width: 300px;
+  text-align: center;
+  border: 1px solid #e7e7e7;
+  background: #eee;
+  padding: 15px;
+  border-radius: 14px;
+}
+
+.player-dtls > img {
+  width: 100%;
+  height: 200px;
+}
+.palyer-info {
+  padding: 30px;
+}
+
+.news-area {
+  padding: 50px 0;
+  min-height: 400px;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 30px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.letest-news-dis {
+  width: 50%;
+}
+
+.letest-news-img {
+  width: 100%;
+}
+
+.letest-news-img > img {
+  width: 100%;
+}
+
+footer {
+  width: 50%;
+  margin: 75px auto;
+  text-align: center;
+}
+
+.footer-top > img {
+  width: 100%;
+}
+.media-area > a {
+  text-decoration: none;
+  font-size: 50px;
+  padding: 20px;
+  color: #000;
+  background: #ededed;
+  margin: 30px 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.media-area {
+  margin: 30px 0;
+}
+
+.copy-right-area {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 750px) {
+  .player-cards-area {
+    grid-template-columns: 1fr;
+    margin: 40px auto;
+  }
+  .news-area {
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+    /* overflow: hidden; */
+  }
+
+  footer {
+    width: 90%;
+    margin: 50px auto;
+  }
+  .media-area > a {
+    font-size: 25px;
+    padding: 15px;
+  }
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+
+  .wrap-title {
+    margin-bottom: 40px;
+  }
+  a.btn {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 349px) {
+  .optimized-device {
+    display: none;
+  }
+  .non-optimized-device {
+    display: block;
+    text-align: center;
+  }
+}
